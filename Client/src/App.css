@@ -1,0 +1,118 @@
+body {
+  background-color: #edeeef;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 120px;
+  filter: drop-shadow( 5px 5px 15px #000 );
+}
+
+.hiddenLink {
+    position: absolute;
+    top: 0;
+    color:#dfdfdf;
+    text-decoration: none;
+    opacity: 0.2;
+    font-size: 12px;
+    right: 0;
+    padding: 7px;
+}
+
+.loader {
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.App-header {
+  background-color: #222;
+  height: 110px;
+  padding: 20px;
+  color: white;
+  margin-bottom: 100px;
+}
+
+input {
+  margin: 5px;
+  width: 180px;
+  border: 1px solid #ccc;
+  outline: none;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 10px;
+  /*border: 1px solid #599bb3;*/
+}
+
+.react-datepicker__time-list{
+  padding: 0px;
+}
+
+.button {
+  margin: 10px;
+  min-width: 180px;
+	-moz-box-shadow: 0px 6px 11px -7px #276873;
+	-webkit-box-shadow: 0px 6px 11px -7px #276873;
+	box-shadow: 0px 6px 11px -7px #276873;
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:12px 30px;
+	text-decoration:none;
+   border:none;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+button[disabled=disabled], button:disabled{
+  background-color: #dddddd;
+  background: #ddd;
+}
+.buttonConfirmed {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #5c9440));
+	background:-moz-linear-gradient(top, #77b55a 5%, #5c9440 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #5c9440 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #5c9440 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #5c9440 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #5c9440 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#5c9440',GradientType=0);
+	background-color:#77b55a;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "hk_calendar",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3003",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "firebase": "^4.4.0",
+    "react": "^15.6.1",
+    "react-button": "^1.2.1",
+    "react-datepicker": "^0.55.0",
+    "react-dom": "^15.6.1",
+    "react-file-reader": "git+https://github.com/pgonzalez-santiago/react-file-reader.git",
+    "react-images": "^0.5.5",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13",
+    "react-transition-group": "^1.2.1",
+    "screenfull": "^3.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}

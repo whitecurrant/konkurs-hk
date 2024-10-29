@@ -1,0 +1,33 @@
+{
+  "name": "hkcalendar",
+  "version": "1.0.0",
+  "description": "Photo contest",
+  "main": "server.js",
+  "private": true,
+  "engines": {
+    "node": "^10.10.0",
+    "npm": "^6.11.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-cache-control": "^1.0.2",
+    "express-fileupload": "^0.1.4",
+    "firebase-admin": "^5.3.0",
+    "fs-extra": "^3.0.1",
+    "log-timestamp": "^0.1.2",
+    "morgan": "^1.8.2"
+  },
+  "scripts": {
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "cd Client && npm start",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
+    "lint": "eslint ."
+  },
+  "author": "Marcin Adamczyk",
+  "license": "ISC"
+}
